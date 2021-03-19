@@ -9,6 +9,6 @@ RUN npm i
 COPY . .
 
 EXPOSE 8100
-
+RUN npm i -g typescript
 RUN npm run build
 CMD ['npm','start']
