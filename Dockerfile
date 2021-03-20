@@ -1,5 +1,5 @@
 FROM node:14
-
+RUN apt-get update && apt-get install zip
 WORKDIR /usr/src/app
 
 COPY package*.json ./
